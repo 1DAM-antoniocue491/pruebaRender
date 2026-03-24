@@ -1,0 +1,73 @@
+/* Fondo con degradado suave */
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Segoe UI", sans-serif;
+    color: white;
+}
+
+/* Tarjeta principal */
+.container {
+    background: rgba(255, 255, 255, 0.15);
+    padding: 40px;
+    border-radius: 20px;
+    text-align: center;
+    width: 380px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+    backdrop-filter: blur(10px);
+    animation: aparecer 0.8s ease-out forwards;
+    transform: translateY(20px);
+    opacity: 0;
+}
+
+/* Animación suave de aparición */
+@keyframes aparecer {
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+/* Botón estilizado */
+button {
+    background: #fff;
+    color: #2575fc;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: 0.3s;
+    font-weight: bold;
+}
+
+button:hover {
+    background: #2575fc;
+    color: #fff;
+    transform: scale(1.05);
+}
+
+/* Caja interactiva */
+.color-box {
+    margin-top: 25px;
+    background: rgba(255,255,255,0.12);
+    padding: 20px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background 0.4s, transform 0.3s;
+}
+
+.color-box:hover {
+    transform: scale(1.03);
+}
